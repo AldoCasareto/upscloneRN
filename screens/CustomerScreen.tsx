@@ -11,7 +11,7 @@ type Props = {
 };
 
 const CustomerScreen = ({ navigation, route }: Props) => {
-  const [searchInput, setSearchInput] = useState('');
+  const [searchInput, setSearchInput] = useState<string>('');
   useLayoutEffect(() => {
     navigation.setOptions({
       headerShown: false,

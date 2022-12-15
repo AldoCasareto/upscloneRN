@@ -7,14 +7,12 @@ export type SearchProps = {
 
 const SearchBar = ({ handleSearch }: SearchProps) => {
   return (
-    <View className='bg-white mt-4'>
-      <View className='py-4 px-12'>
-        <TextInput
-          onChangeText={handleSearch}
-          className='border-b border-gray-300 text-lg'
-          placeholder='Type customer name'
-        />
-      </View>
+    <View className='bg-white pt-5 pb-0 px-10'>
+      <TextInput
+        onChangeText={handleSearch}
+        className='border-b border-gray-300 text-lg'
+        placeholder='Type customer name'
+      />
     </View>
   );
 };
