@@ -30,7 +30,7 @@ type CustomerResponse = {
   value: Customer;
 };
 
-type Order = {
+export type Order = {
   carrier: string;
   createdAt: string;
   shippingCost: number;

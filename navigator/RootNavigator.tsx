@@ -2,10 +2,11 @@ import React from 'react';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import TabNavigator from './TabNavigator';
+import ModalScreen from '../screens/ModalScreen';
 
 export type RootStackParamsList = {
   Main: undefined;
-  MyModal: {
+  CustomerModal: {
     userId: string;
     name: string;
   };
@@ -13,12 +14,15 @@ export type RootStackParamsList = {
 };
 
 const RootNavigator = () => {
-  const RootStack = createNativeStackNavigator();
+  const RootStack = createNativeStackNavigator<RootStackParamsList>();
 
   return (
     <RootStack.Navigator>
       <RootStack.Group>
         <RootStack.Screen name='Main' component={TabNavigator} />
+      </RootStack.Group>
+      <RootStack.Group>
+        <RootStack.Screen name='CustomerModal' component={ModalScreen} />
       </RootStack.Group>
     </RootStack.Navigator>
   );
