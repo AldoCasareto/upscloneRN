@@ -22,7 +22,11 @@ const RootNavigator = () => {
         <RootStack.Screen name='Main' component={TabNavigator} />
       </RootStack.Group>
       <RootStack.Group>
-        <RootStack.Screen name='CustomerModal' component={ModalScreen} />
+        <RootStack.Screen
+          name='CustomerModal'
+          options={{ presentation: 'modal', headerShown: false }}
+          component={ModalScreen}
+        />
       </RootStack.Group>
     </RootStack.Navigator>
   );
