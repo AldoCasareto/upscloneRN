@@ -31,7 +31,7 @@ const TabNavigator = () => {
           if (route.name === 'Customers') {
             return <Icon name='users' type='entypo' color={focused ? '#59C1CC' : 'gray'} />;
           } else if (route.name === 'Orders') {
-            return <Icon name='box' type='entypo' color={focused ? '#E6A7C' : 'gray'} />;
+            return <Icon name='box' type='entypo' color={focused ? '#EB6a7C' : 'gray'} />;
           }
         },
       })}
