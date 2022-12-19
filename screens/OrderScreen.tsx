@@ -34,7 +34,9 @@ const OrderScreen = ({
     });
   }, []);
 
-  const handlePress = () => {};
+  const handlePress = () => {
+    setAscending(!ascending);
+  };
 
   return (
     <ScrollView>
